@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '@/styles/Home.module.css';
+import Game from '@/components/Game';
 
 export default function Home() {
   return (
@@ -13,8 +14,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Keeyan Land</h1>
         <div className={styles.gamePlaceholder}>
-          {/* Placeholder for the game */}
-          <p>Game will be here</p>
+          <Game />
         </div>
       </main>
     </div>
